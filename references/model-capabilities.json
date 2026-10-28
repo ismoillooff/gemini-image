@@ -1,0 +1,33 @@
+{
+  "_source": "https://ai.google.dev/gemini-api/docs/image-generation and /generate-content/image-generation, checked 2026-10-28. Re-check when a call is rejected.",
+  "_notes": [
+    "REST generateContent: generationConfig.responseModalities, generationConfig.imageConfig.aspectRatio, generationConfig.imageConfig.imageSize.",
+    "imageSize needs an uppercase K ('1K','2K','4K'); '512' has no K. Lowercase is rejected.",
+    "Not documented as supported (so never sent): mask/inpainting, transparent output, seed, negative prompt, steps, quality.",
+    "Every output carries a SynthID watermark.",
+    "Pixel dimensions per size are not tabulated in the docs: verify the downloaded file instead of trusting the requested size."
+  ],
+  "aspect_ratios_common": ["1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9"],
+  "aspect_ratios_extended": ["1:4", "4:1", "1:8", "8:1"],
+  "models": {
+    "gemini-nano-banana-2.1": {"name": "Nano Banana 2.1", "status": "current, recommended", "tier": "standard",
+      "sizes": ["1K", "2K", "4K"], "extended_aspects": true, "max_refs": {"object": 10, "character": 4}},
+    "gemini-3-pro-image": {"name": "Nano Banana Pro", "status": "current, complex/professional", "tier": "pro",
+      "sizes": ["1K", "2K", "4K"], "extended_aspects": true, "max_refs": {"object": 6, "character": 5, "style": 3}},
+    "gemini-3.1-flash-lite-image": {"name": "Nano Banana 2 Lite", "status": "current, speed/cost", "tier": "lite",
+      "sizes": ["1K"], "extended_aspects": false, "max_refs": {"object": 14, "character": 0}},
+    "gemini-3.1-flash-image": {"name": "Nano Banana 2", "status": "previous generation", "tier": "standard",
+      "sizes": ["512", "1K", "2K", "4K"], "extended_aspects": true, "max_refs": {"object": 10, "character": 4}},
+    "gemini-2.5-flash-image": {"name": "Nano Banana (legacy)", "status": "legacy", "tier": "lite",
+      "sizes": [], "extended_aspects": false, "max_refs": {"object": 3}}
+  },
+  "tiers": {
+    "lite": ["gemini-3.1-flash-lite-image", "gemini-2.5-flash-image"],
+    "standard": ["gemini-nano-banana-2.1", "gemini-3.1-flash-image"],
+    "pro": ["gemini-3-pro-image"]
+  },
+  "expected_long_side_px": {"512": 512, "1K": 1024, "2K": 2048, "4K": 4096},
+  "gemini_app": {
+    "_note": "Web app (gemini.google.com): model chosen in the UI picker; aspect ratio and size come only from the prompt and are not guaranteed. On-page image is a ~1024px preview; 'Download full-sized image' gives the full file. Observed 2026-10-28: preview 1024x572 for 16:9 prompts."
+  }
+}

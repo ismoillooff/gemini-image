@@ -1,0 +1,30 @@
+{
+  "_comment": "Copy to brands/<name>.json inside the skill or .claude/brand.json in a project. No secrets here.",
+  "name": "Example Brand",
+  "description": "CRM for shops and restaurants in Uzbekistan",
+  "audience": "small-business owners, 25-50",
+  "personality": ["reliable", "modern", "friendly"],
+  "colors": {
+    "primary": "#0B1F3A",
+    "secondary": "#1E6FD9",
+    "accent": "#FFB020",
+    "text_on_dark": "#FFFFFF",
+    "text_on_light": "#0B1F3A",
+    "background": "#F5F7FA"
+  },
+  "fonts": {
+    "headline": "/path/to/NotoSans-Bold.ttf",
+    "body": "/path/to/NotoSans-Regular.ttf",
+    "_note": "must contain oʻ gʻ and Cyrillic if used; postprocess.py text checks this"
+  },
+  "logo": {
+    "file": "/path/to/logo-transparent.png",
+    "position": "bottom-right",
+    "scale": 0.15,
+    "never_regenerate": true
+  },
+  "style_sentence": "Clean modern 3D illustration, soft studio lighting, deep navy and electric blue palette with warm amber accents, rounded shapes, generous negative space",
+  "never": ["red as a main colour", "cartoon mascots", "stock-photo handshakes"],
+  "text_box": "#0B1F3ACC",
+  "formats": {"instagram": "ig-post", "story": "ig-story", "website": "web-hero", "telegram": "tg-post"}
+}

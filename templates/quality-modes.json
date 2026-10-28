@@ -1,0 +1,25 @@
+{
+  "_note": "Per-task budgets. Edit freely. 'final' is not 'unlimited' and never implies the pro tier; switch tier only when the user agrees. A generation = one image request (variants count individually).",
+  "draft": {
+    "purpose": "check composition and direction cheaply",
+    "tier": "lite", "size": "1K", "variants": 1, "edit_attempts": 0, "max_generations": 2,
+    "qa": ["overall view only", "subject, composition, ratio"],
+    "deliver": "preview; say it is a draft"
+  },
+  "standard": {
+    "purpose": "everyday project work: balanced quality and cost",
+    "tier": "standard", "size": "1K", "variants": 1, "edit_attempts": 2, "max_generations": 4,
+    "qa": ["overall view", "detail crops of key areas", "task checklist", "text/logo check"],
+    "deliver": "original + preview"
+  },
+  "final": {
+    "purpose": "deliverable for publication",
+    "tier": "standard", "size": "2K", "variants": 2, "edit_attempts": 3, "max_generations": 6,
+    "qa": ["overall view", "full detail grid", "task checklist", "text/logo check", "display-size check (icons: real sizes)", "compare with previous best"],
+    "deliver": "original + production derivatives + QA notes"
+  },
+  "size_by_display": {
+    "_note": "pick the smallest size whose long side >= 2x the largest rendered width",
+    "icon": "1K", "card": "1K", "content": "1K", "hero": "2K", "print": "4K"
+  }
+}

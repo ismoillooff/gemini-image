@@ -1,0 +1,20 @@
+{
+  "purpose": "hero image for a CRM landing page; must leave room for a headline on the left",
+  "subject": "a friendly shop owner checking sales on a tablet behind a café counter",
+  "key_features": ["tablet screen glows softly (no readable UI)", "relaxed confident smile"],
+  "composition": "medium shot, subject on the right third, calm negative space on the left half",
+  "foreground": "edge of a wooden counter with a cup, slightly out of focus",
+  "midground": "the shop owner",
+  "background": "warm café interior, softly blurred shelves and pendant lights",
+  "materials": ["oiled oak counter with visible grain", "matte ceramic cup", "linen apron"],
+  "lighting": "large window light from the left, warm 4000K, soft shadows to the right, gentle rim light on hair",
+  "style": "natural documentary-style photograph",
+  "palette": "warm wood, cream, deep navy accents",
+  "contrast": "medium, no crushed blacks",
+  "keep": [],
+  "text_space": "on the left half",
+  "avoid": ["readable text on the tablet", "extra hands or fingers", "stock-photo grin", "cluttered left side"],
+  "aspect": "16:9",
+  "display": "hero",
+  "transparent": false
+}

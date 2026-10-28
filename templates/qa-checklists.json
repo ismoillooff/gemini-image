@@ -1,0 +1,20 @@
+{
+  "_how": "Look at the full image AND zoomed crops (qa.py detail). Mark each item pass/fail/n-a with a short note. Only items you actually looked at count as checked.",
+  "common": [
+    "count and placement of objects as briefed",
+    "perspective and proportions consistent",
+    "light direction matches shadows and reflections",
+    "no melted, duplicated or random details",
+    "no halos or oversharpened edges around subjects",
+    "clean subject/background boundary",
+    "text, logo and symbols exactly right (or absent)",
+    "crop, safe margins and space for text as briefed"
+  ],
+  "product": ["silhouette and proportions match reference", "material surfaces and reflections believable", "label/logo identical to reference (compare side by side)", "contact shadow grounded, no floating", "edges clean for cut-out"],
+  "photo": ["hands: 5 fingers, natural joints", "faces: symmetric eyes, natural teeth and skin", "horizon and verticals consistent", "signage/text in scene readable and correct", "reflections match the scene", "no plastic or waxy surfaces"],
+  "illustration": ["single consistent style", "silhouettes readable", "palette limited and on-brand", "focal point clear", "no stray photographic textures"],
+  "icon": ["recognisable at 16, 24 and 32 px (qa.py icon)", "one metaphor, no tiny details", "stroke weight consistent", "works on light and dark backgrounds", "no text, no texture"],
+  "hero": ["focal subject strong", "headline area calm and contrasted", "desktop and mobile crops keep the subject (qa.py crops)", "brand palette respected", "nothing important within 5% of edges"],
+  "banner": ["text area flat and contrasted", "focal element survives wide crop", "reads at a glance at display size"],
+  "background": ["no focal objects", "low contrast where content sits", "no visible repeating artefacts"]
+}
